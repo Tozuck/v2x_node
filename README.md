@@ -1,4 +1,5 @@
 ## Usage
+update for speed
 
 To use this script, run the following command:
 
