@@ -111,8 +111,7 @@ docker compose up -d || echo_error "Failed to start Marzban Node service."
 
 # Enable and reload UFW
 echo_info "Finalizing UFW setup..."
-ufw --force enable
-ufw reload
+
 
 # Clear shell history for security
 echo_info "Clearing shell history..."
