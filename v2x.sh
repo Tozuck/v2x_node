@@ -32,6 +32,7 @@ ufw allow 80  # HTTP
 ufw allow 443 # HTTPS
 ufw allow 2053
 ufw allow 2087
+ufw allow 2096
 ufw allow 62050
 ufw allow 62051
 
@@ -111,6 +112,7 @@ docker compose up -d || echo_error "Failed to start Marzban Node service."
 
 # Enable and reload UFW
 echo_info "Finalizing UFW setup..."
+ufw -force reload
 
 
 # Clear shell history for security
