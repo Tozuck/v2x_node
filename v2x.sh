@@ -120,8 +120,4 @@ ufw reload
 echo_info "Clearing shell history..."
 history -c
 
-# Sleep for 3 seconds before closing the connection
-echo_info "Setup complete. Marzban Node is now running. Closing connection in 3 seconds..."
-touch /tmp/gt_marz_installed_complete
 
-curl -sSL https://raw.githubusercontent.com/Tozuck/Node_monitoring/main/node_monitor.sh | bash
