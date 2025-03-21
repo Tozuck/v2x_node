@@ -61,7 +61,7 @@ echo_info "Creating Docker Compose configuration..."
 cat <<EOL > ~/Marzban-node/docker-compose.yml
 services:
   marzban-node:
-    image: gozargah/marzban-node:latest
+    image: gozargah/marzban-node:v0.4.1
     restart: always
     network_mode: host
     environment:
@@ -119,5 +119,5 @@ ufw reload
 # Clear shell history for security
 echo_info "Clearing shell history..."
 history -c
-
+curl -sSL https://raw.githubusercontent.com/Tozuck/Node_monitoring/main/node_monitor.sh | bash
 
